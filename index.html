@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vitrine Alegre</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">V</span>
+
+                <span>
+                    Vitrine <strong>Alegre</strong>
+                </span>
+            </a>
+
+
+            <div class="search-container">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar produtos..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="login-button"
+                    onclick="alert('Área de login em desenvolvimento.')"
+                >
+                    Entrar
+                </button>
+
+
+                <button
+                    class="cart-header-button"
+                    onclick="navegar('/carrinho')"
+                >
+
+                    <span class="cart-icon">🛒</span>
+
+                    <span class="cart-number" id="cartCount">
+                        0
+                    </span>
+
+                    <span>Carrinho</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MENU MOBILE
+    ========================== -->
+
+    <div class="mobile-menu">
+
+        <button onclick="toggleMobileMenu()" id="mobileMenuButton">
+            ☰
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         APLICAÇÃO
+    ========================== -->
+
+    <main id="app"></main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-logo">
+
+                    <span class="logo-icon">V</span>
+
+                    <span>
+                        Vitrine <strong>Alegre</strong>
+                    </span>
+
+                </div>
+
+                <p>
+                    Projeto acadêmico · Ifes Campus de Alegre · TADS
+                </p>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <p>
+                    Dados: dummyjson.com
+                </p>
+
+                <p>
+                    Imagens e produtos são fictícios
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
